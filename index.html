@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words with similar characters</title>
+    <link rel="shortcut icon" href="./android-chrome-192x192.png" type="image/x-icon">
+    <style> 
+    div {
+        width: 100px;
+      height: 30px;
+      color:rgb(19, 4, 118);
+      font-weight: bold;
+      position: relative;
+      animation: mymove 3s infinite;
+      
+    }
+    body{
+      background-image: url('./BG2.webp');
+    }
+    #Index3{
+      display :none;
+    }
+    a{
+        text-decoration: none;
+        color:black;
+    }
+    
+    button:hover{
+        background-color: #00ffff;
+        border-radius: 5px;
+        height: 30px;
+        width: 150px;
+        transition: width 1s;
+    
+    }
+    #Index:hover{
+        text-decoration: underline;
+        color: rgb(128, 0, 4);
+    }
+    
+    #div1 {animation-timing-function: linear;}
+    #div2 {animation-timing-function: ease;}
+    #div3 {animation-timing-function: ease-in;}
+    #div4 {animation-timing-function: ease-out;}
+    #div5 {animation-timing-function: ease-in-out;}
+    
+    @keyframes mymove {
+      from {left: 0px;}
+      to {left: 500px;}
+    }
+    body{
+        margin-top: 125px;
+    }
+    </style>
+</head>
+
+    <body style="text-align: center;">
+        <h1 id="Index">
+            Hello Programmer
+        </h1>
+      <div id="div1"><h1>click</h1></div>
+    <div id="div2"><h2>to<h2></div>
+    <div id="div2"><h3>open<h3></div>
+    
+    <br>
+    <br>
+         
+     <button onclick="geek()">
+            Click me!
+        </button>
+      
+    
+        <p id="g"></p>
+        <br>
+        <center>  <button type="button" class="btn btn-secondary" id ="Index3" onClick="document.location.reload(true);" value="Refresh"><a href="index1.html">SIMULATION</a></button></center>
+    
+    
+    <script>
+    
+    
+    
+            function geek() {
+                var doc = prompt("Please Enter Your Name");
+                if (doc != null) {
+                    document.getElementById("g").innerHTML =
+                        "welcome " + doc;
+                }
+    
+                var  z= document.getElementById("Index3");
+                    if(z.style.display === "block") 
+                    {
+                     z.style.display = "none";
+                    }
+                    else
+                    {
+                      z.style.display = "block";
+                    }      
+                    check++;
+                
+            }
+            </script>
+</body>
+</html>
